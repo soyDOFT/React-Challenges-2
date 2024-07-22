@@ -7,7 +7,13 @@ export default function MovieBox({ movie }) {
   return (
     <div className={styles.container} style={{backgroundImage: `url(${url})`}}>
       <p>{movie?.title}</p>
-      <p>{movie?.release_date}</p>
+      <div className={styles.details}>
+        <p>{movie?.original_title}</p>
+        <p>{movie?.release_date}</p>
+        <p>{movie?.overview}</p>
+        <p>Rating: {movie?.vote_average} / 10</p>
+        <p>Likes: {movie?.vote_count}</p>
+      </div>
     </div>
   )
 }
