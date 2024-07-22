@@ -22,7 +22,3 @@
 .details {
     display: none;
 }
-
-.details:hover {
-    display: block;
-}
