@@ -51,8 +51,7 @@ export default function Notes() {
                 <p style={{display:"none"}}></p>
                 <button onClick={(e) => removeNotes(e)}>Remove</button>
                 <button onClick={(e) => openEditor(e)}>Edit</button>
-                <Link to="/details" >Details</Link>
-
+                <Link to="/details" state={{ from: "Notes", note: {id: note.id, title: note.title, description: note.description}}}>Details</Link>
                 </div>
             )
         })}
