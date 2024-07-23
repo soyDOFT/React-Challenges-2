@@ -26,3 +26,12 @@ input[type="submit"] {
 p {
     margin: 5px;
 }
+
+.editor {
+    display: none;
+    padding: 200px;
+    background-color: black;
+    position: fixed;
+    top: 20vh;
+    left: 20vw;
+}
